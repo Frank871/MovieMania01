@@ -1,14 +1,16 @@
 
 
 
+var Audio = new Audio('music.mp3');
+Audio.loop = true;
+Audio.play();
+
+
 
 
 //setting my array of movies
 var movies = ["Kill Bill", "King Kong", "John Wick", "Django Unchained","The Hateful Eight", "The Last Samurai", "Jack Reacher", "Home Alone 2", "Terminator 2: Judgment Day", "Hackers", "Snowden", "The Martian", "E.T. the Extra-Terrestrial", "Johnny 5", "Back to the Future", "Ferris Bueller's Day Off", "Raiders of the Lost Ark", "Return of the Jedi", "A Nightmare on Elm Street", "Footloose"];
 
-Audio = new Audio('music.mp3');
-Audio.loop = true;
-Audio.play();
 
 
   //creating a display function for my giphys being pull from api
@@ -76,3 +78,5 @@ Audio.play();
      $(document).on("click", ".movie", displayMovieGiphy);
      // Calling the renderButtons function to display the intial buttons
      renderButtons();
+
+        
