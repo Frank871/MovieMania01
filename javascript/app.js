@@ -1,9 +1,9 @@
 
 
 
-var Audio = new Audio('music.mp3');
-Audio.loop = true;
-Audio.play();
+var myAudio = new Audio('music.mp3');
+myAudio.loop = true;
+myAudio.play();
 
 
 
