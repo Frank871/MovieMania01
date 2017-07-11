@@ -1,11 +1,14 @@
-//music to play when website loads.
 
-myAudio = new Audio('images/funmusic.mp3');
-myAudio.loop = true;
+
+
 
 
 //setting my array of movies
 var movies = ["Kill Bill", "King Kong", "John Wick", "Django Unchained","The Hateful Eight", "The Last Samurai", "Jack Reacher", "Home Alone 2", "Terminator 2: Judgment Day", "Hackers", "Snowden", "The Martian", "E.T. the Extra-Terrestrial", "Johnny 5", "Back to the Future", "Ferris Bueller's Day Off", "Raiders of the Lost Ark", "Return of the Jedi", "A Nightmare on Elm Street", "Footloose"];
+
+Audio = new Audio('music.mp3');
+Audio.loop = true;
+Audio.play();
 
 
   //creating a display function for my giphys being pull from api
@@ -57,7 +60,7 @@ var movies = ["Kill Bill", "King Kong", "John Wick", "Django Unchained","The Hat
          // Adding the button to the buttons-view div
          $("#movies-area").append(a);
        }
-       myAudio.play();
+       
      };
      
       $("#add-movie").on("click", function(event) {
